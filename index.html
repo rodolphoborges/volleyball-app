@@ -1,0 +1,35 @@
+<!-- Formulário de Cadastro de Jogadores -->
+<div class="container">
+    <h2>Participantes do Dia</h2>
+    <div id="players-list">
+      <div class="player-input">
+        <input type="text" placeholder="Nome" class="name">
+        <select class="skill">
+          <option value="1">1 (Iniciante)</option>
+          <option value="2">2</option>
+          <option value="3" selected>3 (Médio)</option>
+          <option value="4">4</option>
+          <option value="5">5 (Avançado)</option>
+        </select>
+        <button class="remove-player">-</button>
+      </div>
+    </div>
+    <button id="add-player">+ Adicionar Jogador</button>
+    <button id="generate-teams">Sortear Times</button>
+  </div>
+  
+  <!-- Exibição dos Times -->
+  <div id="teams" class="hidden">
+    <h2>Times Sorteados</h2>
+    <div class="team" id="team-a">
+      <h3>Time A</h3>
+      <ul class="players"></ul>
+      <p>Total Habilidade: <span class="total"></span></p>
+    </div>
+    <div class="team" id="team-b">
+      <h3>Time B</h3>
+      <ul class="players"></ul>
+      <p>Total Habilidade: <span class="total"></span></p>
+    </div>
+    <button id="save-teams">Salvar Times</button>
+  </div>
